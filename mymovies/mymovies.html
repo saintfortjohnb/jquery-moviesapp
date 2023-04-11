@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Info</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="mymovies.css">
+</head>
+<body>
+    <h1>Movie List</h1>
+    <form id="my-form">
+        <label for="title-input" id="title-label">Title:</label>
+        <input type="text" id="title-input" name="title">
+                
+        <label for="rating-input" id="rating-label">Rating:</label>
+        <input type="number" id="rating-input" name="rating" min="1" max="10">
+            
+        <button type="submit" id="submmit-btn">Submit</button>
+    </form>
+
+    <div id="sort-buttons">
+        <button id="sort-title">Sort by Title</button>
+        <button id="sort-rating-asc">Sort by Rating Ascending</button>
+        <button id="sort-rating-desc">Sort by Rating Descending</button>
+    </div>
+    
+    <div id="my-container"></div>
+
+<script src="mymovies.js"></script>
+</body>
+</html>
